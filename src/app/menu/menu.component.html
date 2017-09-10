@@ -1,4 +1,11 @@
 <div>
-  <nav>
-    <a routerLink="customers/index" routerLinkActive="active">Customer/</a>
-    <a routerLink="orders/add" routerLinkActive="active">Orders/</a>
+<button md-button [mdMenuTriggerFor]="menu">Menu Principal</button> 
+<md-menu #menu="mdMenu">
+  <button md-menu-item routerLink="customers/index">Customer</button>
+  <button md-menu-item routerLink="orders/add">Orders</button>
+</md-menu>
+</div>
+
+
+
+
